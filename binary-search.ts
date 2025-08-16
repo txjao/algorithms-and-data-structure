@@ -3,19 +3,15 @@ function binarySearch(nums: number[], numForSearch: number): number | null {
     let last = nums.length - 1
 
     while (fisrt <= last) {
-        let middle = (fisrt + last) / 2
+        let middle = Math.floor((fisrt + last) / 2)
         let response = nums[middle]
 
         if (response == numForSearch) {
-            return response
-        }
-
-        if (middle < numForSearch) {
-            last = middle
-        }
-
-        if (middle > numForSearch) {
-            fisrt = middle
+            return middle
+        } else if (response > numForSearch) {
+            last = middle - 1
+        } else if (response < numForSearch) {
+            fisrt = middle + 1
         }
     }
 
@@ -24,4 +20,4 @@ function binarySearch(nums: number[], numForSearch: number): number | null {
 
 const nums = [1,2,3,7,8,9]
 
-console.log(binarySearch(nums, 8))
+console.log("Index of the search: ", binarySearch(nums, 8))
