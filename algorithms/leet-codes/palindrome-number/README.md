@@ -1,7 +1,6 @@
-## Palindrome Number
+## <a href="https://leetcode.com/problems/palindrome-number/description/" target="_blank"> Palindrome Number </a>
 
 **Problem:** Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwise.
-
 **Examples:**
 
 **Example 1:**
@@ -17,3 +16,4 @@ Input: x = -121 Output: false Explanation: From left to right, it reads -121. Fr
 **Example 3:**
 
 Input: x = 10 Output: false Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
