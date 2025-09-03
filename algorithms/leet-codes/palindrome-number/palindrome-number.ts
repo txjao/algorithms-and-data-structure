@@ -1,6 +1,6 @@
 function isPalindrome(x: number): boolean {
     let algarismos = x.toString().split('');
-    let algarismosReversos = [...algarismos].reverse();
+    let algarismosReversos = [...algarismos].reverse(); // Utiliza o "spread" dentro de um array, gerando uma cópia com os valores do array algarismos
 
     let aux = 0
     for (let i = 0; i < algarismos.length; i++) {
