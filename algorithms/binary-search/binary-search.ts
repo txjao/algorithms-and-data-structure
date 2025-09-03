@@ -1,6 +1,6 @@
-function binarySearch(nums, numForSearch){
-  let left = 0
-  let right = nums.length - 1
+function binarySearch(nums: number[], numForSearch: number): number | null{
+  let left: number = 0
+  let right: number = nums.length - 1
 
   while (left <= right) {
     let middle = Math.floor((left + right) / 2)
